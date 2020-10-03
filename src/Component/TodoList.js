@@ -16,7 +16,7 @@ const TodoList = (props) => {
             <hr/>
             <ul>
                 {props.details.map((data, i) =>
-                    <List key={i} index={i} name={data} editTodo={(count) => editTodoHandler(count)} deleteTodo={(count) => deleteTodoHandler(count)}></List>
+                    <List key={i} index={i} detaillist={data} editTodo={(count) => editTodoHandler(count)} deleteTodo={(count) => deleteTodoHandler(count)}></List>
                 )}
 
             </ul>

@@ -1,3 +1,6 @@
-.Invalid{
+:local(.Invalid) {
     border: 1px solid red;
+}
+.Valid {
+    font: 12px;
 }

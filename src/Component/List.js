@@ -27,7 +27,7 @@ const List = (props) =>{
         <li key={props.index} className="todolist">
             <label style={{textDecoration:state.todoCheck}} >
                 <input type="checkbox" onClick={(event) => strikeThrough(props.index,event)}/> 
-                {props.name.name} ({props.name.description})</label> 
+                {props.detaillist.name} ({props.detaillist.description})</label> 
          <Button outline color="warning" size="sm" disabled={state.disablevalue} onClick={() => editTodoHandler(props.index)}>Edit</Button> <Button outline color="danger" disabled={state.disablevalue} size="sm" onClick={() => deleteListHandler(props.index)}>Delete</Button>
        </li>
     )
